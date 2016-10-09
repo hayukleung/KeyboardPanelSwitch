@@ -34,15 +34,16 @@
           android:layout_width="match_parent"
           android:layout_height="40dp"
           android:layout_centerVertical="true"
-          android:layout_toLeftOf="@+id/kps_switch"
+          android:layout_toLeftOf="@+id/kps_switch_panel"
           />
       <Button
-          android:id="@+id/kps_switch"
+          android:id="@+id/kps_switch_panel"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
           android:layout_alignParentEnd="true"
           android:layout_centerVertical="true"
-          android:text="switch"
+          android:text="switch\npanel and keyboard"
+          android:textSize="10sp"
           />
     </RelativeLayout>
 
