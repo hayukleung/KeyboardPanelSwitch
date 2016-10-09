@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_chat_room"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hayukleung.kps.ChatRoomActivity"
+    >
+
+  <ScrollView
+      android:id="@+id/kps_content"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_above="@+id/kps_bottom"
+      >
+
+  </ScrollView>
+
+  <LinearLayout
+      android:id="@+id/kps_bottom"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      android:orientation="vertical"
+      >
+    <RelativeLayout
+        android:id="@+id/kps_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+      <EditText
+          android:id="@+id/kps_text"
+          android:layout_width="match_parent"
+          android:layout_height="40dp"
+          android:layout_centerVertical="true"
+          android:layout_toLeftOf="@+id/kps_switch"
+          />
+      <Button
+          android:id="@+id/kps_switch"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentEnd="true"
+          android:layout_centerVertical="true"
+          android:text="switch"
+          />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/kps_panel"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/colorPrimary"
+        />
+  </LinearLayout>
+
+</RelativeLayout>
